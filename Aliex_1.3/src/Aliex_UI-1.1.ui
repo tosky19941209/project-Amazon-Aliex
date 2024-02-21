@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1260</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>100</width>
+    <height>10</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="wid_amazon" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>1211</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_amazon">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1191</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>画像</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>タイトル</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>価格</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>在庫</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>620</y>
+     <width>1191</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_amazon">
+    <widget class="QPushButton" name="btn_get">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>新しく 抽出</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_compare">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>20</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>抽出 比較</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_get2">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>20</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>抽出</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_qoo">
+    <widget class="QLineEdit" name="lineEdit_rate">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_rate">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(0,0,117);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>設定</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_new">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>新規</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_update">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>更新</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_remove">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>20</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>消去</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_start">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>20</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+
+font: 20pt &quot;Algerian&quot;;
+color: rgb(138, 5, 255);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>スタート</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_rakuten"/>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-70</y>
+     <width>1281</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btn_raku">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>160</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/img/rakuten.png);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>80</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 0, 0);
+font: 36pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>管理ツール</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_raku">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>220</y>
+      <width>201</width>
+      <height>6</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_amazon">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>160</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	border-image: url(:/new/prefix1/img/amazon.png);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_qoo">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>211</width>
+      <height>6</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_qoo">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>160</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/img/qoo.png);
+}
+
+QPushButton:hover{
+	color: red;
+}
+
+QPushButton:pressed{
+	color:yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_amazon">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>201</width>
+      <height>6</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_hide">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>90</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/img/hide.png);
+}
+
+QPushButton:hover{
+	border-image: url(:/new/prefix1/img/hover_hide.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_close">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>90</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/img/close.png);
+}
+
+QPushButton:hover{
+	border-image: url(:/new/prefix1/img/hover_close.png);
+}
+
+QPushButton:pressed{
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="wid_qoo" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>1211</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_qoo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1191</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>画像</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>タイトル</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>価格</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>在庫</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="wid_raku" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>1211</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_raku">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1191</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>画像</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>タイトル</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>価格</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>在庫</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_loading">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>300</y>
+     <width>101</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
